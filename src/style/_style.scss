@@ -1,0 +1,121 @@
+*{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:TT Lakes;
+    font-size: 14px;
+    color:$text;
+}
+
+header{
+    padding: 18px 16px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    height: auto;
+    width: auto;
+    position: relative;
+}
+.logo::after{
+    position: absolute;
+    background-color: #EAEAEA;
+    left: 113px;
+    top: 12px;
+    content: "";
+    height: 32px;
+    width: 2px;
+}
+.header__button{
+    background-color: transparent;
+    border:0;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    padding: 0;
+}
+.header__button:nth-child(2){
+    order:-1;
+}
+.tablet{
+    display: none;
+}
+.main{
+    background-color: #F8F8F8;
+}
+.heading{
+    color: $h1_text;
+    padding:24px 16px 24px 16px;
+    position:relative;
+}
+.heading::after{
+    position: absolute;
+    background-color: $border_h1;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    left: 0px;
+    top: 20px;
+    content: "";
+    height: 40px;
+    width: 4px;
+}
+.heading__h1{
+    font-size: 28px;
+}
+
+.nav__list{
+    display: flex;
+    justify-content: space-between;
+    white-space: nowrap;
+    overflow: scroll;
+    gap: 1px; 
+    padding-left:16px;
+    padding-bottom: 24px;
+}
+.nav::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+.nav__button-link{
+    text-decoration: none;
+    font-size: 16px;
+    color: $text_button;
+}
+.nav__button{
+    padding: 8px 16px 8px 16px;
+    text-decoration: none;
+    border-color: transparent; 
+    background-color: transparent;
+}
+.nav__button:hover{
+
+    border-color: $border_button;
+    border-radius: 5px;  
+    background-color: #ffffff; 
+    
+}
+.section{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+.section__info{
+    padding-left: 16px;
+    padding-right: 16px;
+    font-size: 14px;
+    
+}
+.section__button{
+    font-size: 16px;
+    background-color: transparent;
+    border-color: transparent;
+    padding-left: 16px;
+}
+.image{
+    width: 100%;
+}
+
