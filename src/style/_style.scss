@@ -105,18 +105,19 @@ header{
     text-decoration: none;
     font-size: 16px;
     color: $text_button;
+    padding: 6px 14px 6px 14px;
+  
 }
 .nav__button{
     padding: 8px 16px 8px 16px;
-    text-decoration: none;
     border-color: transparent; 
     background-color: transparent;
 }
-.nav__button:hover{
 
-    border-color: $border_button;
-    border-radius: 5px;  
-    background-color: #ffffff;   
+.nav__button-link:focus{
+    border:2px solid $border_button;
+    background-color: #ffffff;
+    border-radius: 5px;
 }
 .section{
     display: flex;
